@@ -109,7 +109,7 @@ const HomeCalculator = () => {
       <div className="max-w-[1400px] mx-auto px-5 sm:px-8 md:px-10 lg:px-10 xl:px-12 2xl:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-[0.75fr_1.25fr] gap-12 lg:gap-16 items-start">
           <div className="lg:sticky lg:top-28">
-            <p className="uppercase text-[13px] font-medium">01 Pricing</p>
+            <p className="uppercase text-[13px] font-medium">02 Pricing</p>
 
             <h2 className="text-2xl sm:text-3xl mb-4 md:text-4xl font-semibold tracking-[-0.04em] sm:tracking-[-0.045em] mt-1  leading-[1.08]">
               Know what your website might cost.
