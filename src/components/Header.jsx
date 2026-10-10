@@ -11,28 +11,42 @@ const Header = () => {
     setMenuOpen(false);
   };
 
+  const base = import.meta.env.BASE_URL;
+
   return (
     <header className="flex m-4 sticky top-[10px] h-[70px] rounded-[20px] bg-white shadow-[0_0_25px_rgba(0,0,0,0.10)] items-center justify-between px-3 sm:px-6 lg:px-1 relative z-50">
-      <Link to="/BilalDevs-Website/" onClick={closeMenu}>
+      <Link to="/" onClick={closeMenu}>
         <img
           className="w-[130px] sm:w-[150px] lg:w-[180px]"
           src={Logo}
-          alt="Logo"
+          alt="VexsoraDevs Logo"
         />
       </Link>
 
       <nav className="hidden lg:flex items-center gap-5 xl:gap-7 text-sm xl:text-base font-medium">
-        <Link to="/vexsoraDevs-Website/">Home</Link>
+        <Link to="/" onClick={closeMenu}>
+          Home
+        </Link>
 
-        <a href="/vexsoraDevs-Website/#services">Services</a>
+        <a href={`${base}#services`} onClick={closeMenu}>
+          Services
+        </a>
 
-        <Link to="/vexsoraDevs-Website/portfolio">Portfolio</Link>
+        <Link to="/portfolio" onClick={closeMenu}>
+          Portfolio
+        </Link>
 
-        <a href="/vexsoraDevs-Website/#pricing">Pricing & Calculator</a>
+        <a href={`${base}#pricing`} onClick={closeMenu}>
+          Pricing & Calculator
+        </a>
 
-        <a href="/vexsoraDevs-Website/#about">About</a>
+        <a href={`${base}#about`} onClick={closeMenu}>
+          About
+        </a>
 
-        <a href="/vexsoraDevs-Website/#contact">Contact</a>
+        <a href={`${base}#contact`} onClick={closeMenu}>
+          Contact
+        </a>
       </nav>
 
       <div className="hidden lg:block pr-3">
@@ -40,8 +54,10 @@ const Header = () => {
       </div>
 
       <button
+        type="button"
         onClick={() => setMenuOpen(true)}
         className="lg:hidden p-2"
+        aria-label="Open menu"
       >
         <Menu size={28} />
       </button>
@@ -51,7 +67,7 @@ const Header = () => {
           menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
         onClick={closeMenu}
-      ></div>
+      />
 
       <aside
         className={`fixed left-0 top-0 h-screen w-[280px] sm:w-[320px] bg-white z-[60] p-5 shadow-2xl transition-transform duration-300 ease-in-out ${
@@ -60,36 +76,45 @@ const Header = () => {
       >
         <div className="flex items-center justify-between mb-10">
           <Link to="/" onClick={closeMenu}>
-            <img className="w-[140px]" src={Logo} alt="Logo" />
+            <img
+              className="w-[140px]"
+              src={Logo}
+              alt="VexsoraDevs Logo"
+            />
           </Link>
 
-          <button onClick={closeMenu} className="p-2">
+          <button
+            type="button"
+            onClick={closeMenu}
+            className="p-2"
+            aria-label="Close menu"
+          >
             <X size={28} />
           </button>
         </div>
 
         <nav className="flex flex-col gap-6 text-base font-medium">
-          <Link to="/vexsoraDevs-Website/" onClick={closeMenu}>
+          <Link to="/" onClick={closeMenu}>
             Home
           </Link>
 
-          <a href="/vexsoraDevs-Website/#services" onClick={closeMenu}>
+          <a href={`${base}#services`} onClick={closeMenu}>
             Services
           </a>
 
-          <Link to="/vexsoraDevs-Website/portfolio" onClick={closeMenu}>
+          <Link to="/portfolio" onClick={closeMenu}>
             Portfolio
           </Link>
 
-          <a href="/vexsoraDevs-Website/#pricing" onClick={closeMenu}>
+          <a href={`${base}#pricing`} onClick={closeMenu}>
             Pricing & Calculator
           </a>
 
-          <a href="/vexsoraDevs-Website/#about" onClick={closeMenu}>
+          <a href={`${base}#about`} onClick={closeMenu}>
             About
           </a>
 
-          <a href="/vexsoraDevs-Website/#contact" onClick={closeMenu}>
+          <a href={`${base}#contact`} onClick={closeMenu}>
             Contact
           </a>
         </nav>
