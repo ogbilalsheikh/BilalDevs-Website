@@ -32,7 +32,7 @@ const AboutPort = () => {
 
             <div className="mt-7 space-y-5 max-w-[540px]">
               <p className="text-[15px] sm:text-[16px] text-gray-600 leading-7">
-                I am a junior front-end developer and UI/UX designer dedicated
+                I am a Senior front-end developer and UI/UX designer dedicated
                 to bridging the gap between aesthetic design systems and clean,
                 performant engineering.
               </p>

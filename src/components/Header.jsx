@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header className="flex m-4 sticky top-[10px] h-[70px] rounded-[20px] bg-white shadow-[0_0_25px_rgba(0,0,0,0.10)] items-center justify-between px-3 sm:px-6 lg:px-1 relative z-50">
-      <Link to="/" onClick={closeMenu}>
+      <Link to="/BilalDevs-Website/" onClick={closeMenu}>
         <img
           className="w-[130px] sm:w-[150px] lg:w-[180px]"
           src={Logo}
@@ -22,11 +22,11 @@ const Header = () => {
       </Link>
 
       <nav className="hidden lg:flex items-center gap-5 xl:gap-7 text-sm xl:text-base font-medium">
-        <Link to="/">Home</Link>
+        <Link to="/BilalDevs-Website/">Home</Link>
 
         <a href="/BilalDevs-Website/#services">Services</a>
 
-        <Link to="/portfolio">Portfolio</Link>
+        <Link to="/BilalDevs-Website/portfolio">Portfolio</Link>
 
         <a href="/BilalDevs-Website/#pricing">Pricing & Calculator</a>
 
@@ -69,7 +69,7 @@ const Header = () => {
         </div>
 
         <nav className="flex flex-col gap-6 text-base font-medium">
-          <Link to="/" onClick={closeMenu}>
+          <Link to="/BilalDevs-Website/" onClick={closeMenu}>
             Home
           </Link>
 
@@ -77,7 +77,7 @@ const Header = () => {
             Services
           </a>
 
-          <Link to="/portfolio" onClick={closeMenu}>
+          <Link to="/BilalDevs-Website/portfolio" onClick={closeMenu}>
             Portfolio
           </Link>
 

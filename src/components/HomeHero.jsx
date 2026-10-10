@@ -1,5 +1,6 @@
 import React from "react";
 import DotsAnimate from "./DotsAnimate";
+import BlinkDot from "./BlinkDot";
 
 const HomeHero = () => {
   return (
@@ -19,7 +20,7 @@ const HomeHero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-14 md:gap-16 lg:gap-12 xl:gap-20 items-center min-h-0 lg:min-h-[calc(100vh-150px)]">
           <div className="w-full">
             <p className=" text-gray-800 mb-4 tracking-[0.7px] bg-gray-200 flex items-center gap-2 px-2 rounded-[8px] text-[12px] sm:text-[9px] md:text-[11px] lg:text-[13px] w-fit">
-              <span className="inline-block h-[9px] w-[9px] sm:h-[10px] sm:w-[10px] md:h-[11px] md:w-[11px] lg:h-[12px] lg:w-[12px] bg-blue-600 rounded-full"></span>
+              <BlinkDot />
               Available for New Projects
             </p>
 

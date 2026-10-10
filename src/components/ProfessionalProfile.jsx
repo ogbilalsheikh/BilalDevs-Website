@@ -15,7 +15,7 @@ const ProfessionalProfile = () => {
                 Current Role
               </p>
               <h1 className="text-[22px] font-semibold">
-                Junior Front-End Web Developer
+                Senior Front-End Web Developer
               </h1>
             </div>
 
@@ -35,7 +35,7 @@ const ProfessionalProfile = () => {
             </p>
 
             <p className="text-gray-700 leading-7 max-w-3xl">
-              I’m a Junior Front-End Web Developer and UI/UX Designer focused on
+              I’m a Senior Front-End Web Developer and UI/UX Designer focused on
               creating modern, responsive, and user-friendly websites. I combine
               clean code with thoughtful design to build digital experiences
               that are visually polished, easy to use, and responsive across
@@ -45,7 +45,7 @@ const ProfessionalProfile = () => {
             <div className="flex flex-wrap gap-6 mt-8">
               <p className="flex items-center gap-2 text-sm font-medium">
                 <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
-                Open to Junior Roles
+                Open to Senior Roles
               </p>
 
               <p className="flex items-center gap-2 text-sm font-medium">

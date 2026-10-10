@@ -24,7 +24,7 @@ const AboutHome = () => {
             </p>
 
             <p className="text-[13px] sm:text-sm md:text-[15px] leading-7 text-slate-500 mt-6 sm:mt-8 max-w-2xl">
-              BilalDevs focuses on modern frontend development and UI/UX design
+              vexsoraDevs focuses on modern frontend development and UI/UX design
               for businesses, freelancers, startups and personal brands. Every
               project is approached with attention to layout, usability,
               responsiveness and the details that make a digital experience feel

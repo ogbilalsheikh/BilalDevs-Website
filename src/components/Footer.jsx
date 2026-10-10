@@ -11,7 +11,7 @@ const Footer = () => {
               to="/BilalDevs-Website/"
               className="text-xl font-semibold tracking-[-0.04em]"
             >
-              Bilal<span className="text-blue-500">Devs</span>
+              Vexsora<span className="text-blue-500">Devs</span>
             </Link>
 
             <p className="text-xs text-slate-500 mt-2">
@@ -44,7 +44,7 @@ const Footer = () => {
             </a>
           </nav>
 
-          <p className="text-xs text-slate-600">© 2026 BilalDevs</p>
+          <p className="text-xs text-slate-600">© 2026 VexsoraDevs</p>
         </div>
       </div>
     </footer>

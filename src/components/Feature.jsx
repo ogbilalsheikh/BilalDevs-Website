@@ -77,11 +77,10 @@ const Feature = () => {
     <section className="w-full bg-gray-100 min-h-[calc(100vh-180px)] px-5 sm:px-8 md:px-12 lg:px-10 xl:px-20 py-12">
       <div className="w-full">
         <div>
-          <p className="uppercase text-[13px] font-medium">What I DO </p>
-          <h1 className="text-[35px] font-bold">Services & Capabilities</h1>
+          <p className="uppercase text-[13px] font-medium">Selected Work </p>
+          <h1 className="text-[35px] font-bold">Featured Projects</h1>
           <h3 className="text-gray-500 text-[16px] font-medium">
-            Focused, high-utility frontend and visual offerings executed with
-            precision.
+            A curation of recent client prototypes. web applications and responsive interfaces
           </h3>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8 ">

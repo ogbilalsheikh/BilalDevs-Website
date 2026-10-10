@@ -1,22 +1,19 @@
 import React from "react";
 import DotsAnimate from "./DotsAnimate";
+import BlinkDot from "./BlinkDot";
 
 const HeroPort = () => {
   return (
     <>
-
       <section className="relative w-full min-h-[calc(100vh-180px)] flex items-center px-5 sm:px-8 md:px-12 lg:px-10 xl:px-20 py-12">
-
         <div className="w-full max-w-4xl flex flex-col text-left">
-
           <p className="text-gray-800 tracking-[0.7px] bg-gray-200 flex items-center gap-2 px-2 rounded-[8px] text-[12px] sm:text-[9px] md:text-[11px] lg:text-[13px] w-fit">
-            <span className="inline-block h-[9px] w-[9px] sm:h-[10px] sm:w-[10px] md:h-[11px] md:w-[11px] lg:h-[12px] lg:w-[12px] bg-blue-600 rounded-full"></span>
+            <BlinkDot />
             Available for freelance projects & roles
           </p>
-        <h1 className="text-[13vw] tracking-[-0.055em] font-bold sm:text-[9vw] md:text-[7.5vw] lg:text-[5.5vw] xl:text-[5.2vw] 2xl:text-[5vw] max-w-[900px]">
-          Hi, I'm Bilal {' '}
-          <span className="text-blue-600">sheikh</span>{" "}
-        </h1>
+          <h1 className="text-[13vw] tracking-[-0.055em] leading-none font-bold sm:text-[9vw] md:text-[7.5vw] lg:text-[5.5vw] xl:text-[5.2vw] 2xl:text-[5vw] max-w-[900px]">
+            Hi, I'm Bilal <span className="text-blue-600">Sheikh</span>
+          </h1>
 
           <h2 className="text-[17px] sm:text-[19px] md:text-[22px] lg:text-[22px] mb-4 text-gray-700 font-semibold">
             junior Front-End Web Developer & UI/UX Designer

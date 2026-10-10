@@ -3,7 +3,6 @@ import Header from './components/Header'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
-import ScrollTop from './components/ScrollTop'
 
 const App = () => {
   return (
