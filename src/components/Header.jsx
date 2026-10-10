@@ -22,17 +22,17 @@ const Header = () => {
       </Link>
 
       <nav className="hidden lg:flex items-center gap-5 xl:gap-7 text-sm xl:text-base font-medium">
-        <Link to="/BilalDevs-Website/">Home</Link>
+        <Link to="/vexsoraDevs-Website/">Home</Link>
 
-        <a href="/BilalDevs-Website/#services">Services</a>
+        <a href="/vexsoraDevs-Website/#services">Services</a>
 
-        <Link to="/BilalDevs-Website/portfolio">Portfolio</Link>
+        <Link to="/vexsoraDevs-Website/portfolio">Portfolio</Link>
 
-        <a href="/BilalDevs-Website/#pricing">Pricing & Calculator</a>
+        <a href="/vexsoraDevs-Website/#pricing">Pricing & Calculator</a>
 
-        <a href="/BilalDevs-Website/#about">About</a>
+        <a href="/vexsoraDevs-Website/#about">About</a>
 
-        <a href="/BilalDevs-Website/#contact">Contact</a>
+        <a href="/vexsoraDevs-Website/#contact">Contact</a>
       </nav>
 
       <div className="hidden lg:block pr-3">
@@ -69,27 +69,27 @@ const Header = () => {
         </div>
 
         <nav className="flex flex-col gap-6 text-base font-medium">
-          <Link to="/BilalDevs-Website/" onClick={closeMenu}>
+          <Link to="/vexsoraDevs-Website/" onClick={closeMenu}>
             Home
           </Link>
 
-          <a href="/BilalDevs-Website/#services" onClick={closeMenu}>
+          <a href="/vexsoraDevs-Website/#services" onClick={closeMenu}>
             Services
           </a>
 
-          <Link to="/BilalDevs-Website/portfolio" onClick={closeMenu}>
+          <Link to="/vexsoraDevs-Website/portfolio" onClick={closeMenu}>
             Portfolio
           </Link>
 
-          <a href="/BilalDevs-Website/#pricing" onClick={closeMenu}>
+          <a href="/vexsoraDevs-Website/#pricing" onClick={closeMenu}>
             Pricing & Calculator
           </a>
 
-          <a href="/BilalDevs-Website/#about" onClick={closeMenu}>
+          <a href="/vexsoraDevs-Website/#about" onClick={closeMenu}>
             About
           </a>
 
-          <a href="/BilalDevs-Website/#contact" onClick={closeMenu}>
+          <a href="/vexsoraDevs-Website/#contact" onClick={closeMenu}>
             Contact
           </a>
         </nav>
