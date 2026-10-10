@@ -6,15 +6,14 @@ import HireMe from "./HireMe";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const base = import.meta.env.BASE_URL;
 
   const closeMenu = () => {
     setMenuOpen(false);
   };
 
-  const base = import.meta.env.BASE_URL;
-
   return (
-    <header className="flex m-4 sticky top-[10px] h-[70px] rounded-[20px] bg-white shadow-[0_0_25px_rgba(0,0,0,0.10)] items-center justify-between px-3 sm:px-6 lg:px-1 relative z-50">
+    <header className="relative z-50 m-4 flex h-[70px] items-center justify-between rounded-[20px] bg-white px-3 shadow-[0_0_25px_rgba(0,0,0,0.10)] sm:px-6 lg:px-1">
       <Link to="/" onClick={closeMenu}>
         <img
           className="w-[130px] sm:w-[150px] lg:w-[180px]"
@@ -23,7 +22,7 @@ const Header = () => {
         />
       </Link>
 
-      <nav className="hidden lg:flex items-center gap-5 xl:gap-7 text-sm xl:text-base font-medium">
+      <nav className="hidden items-center gap-5 text-sm font-medium lg:flex xl:gap-7 xl:text-base">
         <Link to="/" onClick={closeMenu}>
           Home
         </Link>
@@ -49,32 +48,32 @@ const Header = () => {
         </a>
       </nav>
 
-      <div className="hidden lg:block pr-3">
+      <div className="hidden pr-3 lg:block">
         <HireMe />
       </div>
 
       <button
         type="button"
         onClick={() => setMenuOpen(true)}
-        className="lg:hidden p-2"
+        className="p-2 lg:hidden"
         aria-label="Open menu"
       >
         <Menu size={28} />
       </button>
 
       <div
-        className={`fixed inset-0 bg-black/40 lg:hidden transition-opacity duration-300 ${
-          menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        className={`fixed inset-0 bg-black/40 transition-opacity duration-300 lg:hidden ${
+          menuOpen ? "visible opacity-100" : "invisible opacity-0"
         }`}
         onClick={closeMenu}
       />
 
       <aside
-        className={`fixed left-0 top-0 h-screen w-[280px] sm:w-[320px] bg-white z-[60] p-5 shadow-2xl transition-transform duration-300 ease-in-out ${
+        className={`fixed left-0 top-0 z-[60] h-screen w-[280px] bg-white p-5 shadow-2xl transition-transform duration-300 ease-in-out sm:w-[320px] ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-between mb-10">
+        <div className="mb-10 flex items-center justify-between">
           <Link to="/" onClick={closeMenu}>
             <img
               className="w-[140px]"
